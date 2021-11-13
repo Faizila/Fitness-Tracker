@@ -8,7 +8,7 @@ https://frozen-island-24753.herokuapp.com/
 
 # Description
 
-
+A fitness tracker application that tracks the daily workout. 
 
 # Table of Contents
 

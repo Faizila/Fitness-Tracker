@@ -8,7 +8,7 @@ https://frozen-island-24753.herokuapp.com/
 
 # Description
 
-A fitness tracker application that tracks the daily workout. 
+A fitness tracker application that tracks the daily workout. It lets user to log multiple exercises in a workout on a given day and it also tracks the name, type, weight, sets, reps, and duration of exercise.
 
 # Table of Contents
 

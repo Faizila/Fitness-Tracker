@@ -53,6 +53,16 @@ The application will be invoked by using the following command:
 ```bash
 npm start
 ```
+* User can add new exercises to a new workout plan.
+
+* User can add exercises to the most recent workout plan.
+
+* User can choose workout type resistance or cardio.
+
+* User has to fill out a form with exercise details and then choose to add exercise to the most recent workout or mark it complete.
+
+* User can view the total duration of each workout and the combined weight of multiple exercises from the past seven workouts on the `stats` page.
+
 # Screenshots
 
 ![1](https://user-images.githubusercontent.com/78191579/141654390-13c061a4-72bc-459a-9a22-5338a50d7e65.JPG)

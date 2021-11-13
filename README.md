@@ -53,13 +53,15 @@ The application will be invoked by using the following command:
 ```bash
 npm start
 ```
+* On page load, user is given the option to create a new workout or continue with their last workout.
+
 * User can add new exercises to a new workout plan.
 
 * User can add exercises to the most recent workout plan.
 
-* User can choose workout type resistance or cardio.
+* User is given the option to choose the workout type resistance or cardio.
 
-* User has to fill out a form with exercise details and then choose to add exercise to the most recent workout or mark it complete.
+* User then has to fill out a form with exercise details and then choose to add exercise to the most recent workout or mark it complete.
 
 * User can view the total duration of each workout and the combined weight of multiple exercises from the past seven workouts on the `stats` page.
 

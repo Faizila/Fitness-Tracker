@@ -13,25 +13,34 @@ day: {
 
 exercises: [{
     type: { 
-    type: String
+    type: String,
+    trim: true,
+    required: "Please enter the type of exercise!"
     },
     name: { 
-      type: String
+      type: String,
+      trim: true,
+      required: "Please enter the name of exercise!"
     },
     distance: { 
-      type: Number
+      type: Number,
+      required: "Please enter the distance!"
      },
     duration: { 
-      type: Number
+      type: Number,
+      required: "Please enter the duration of exercise!"
      },
     weight: { 
-      type: Number
+      type: Number,
+      required: "Please enter the weight!"
      },
     sets: { 
-      type: Number
+      type: Number,
+      required: "Please enter the sets!"
      },
     reps: { 
-      type: Number
+      type: Number,
+      required: "Please enter the reps!"
      }
     
 }]

@@ -46,6 +46,8 @@ router.post("/api/workouts", ({ body }, res) => {
 // GET WorkoutsInRange
 router.get("/api/workouts/range", (req, res) => {
     db.aggregate([{$addFields:{totalDuration: { $sum: "$exercises.duration"}}}])
+    // show past 7 workouts
+    .limit(7)
     .then((dbWorkout) => {
 	   res.json(dbWorkout);
 	})
@@ -58,4 +60,4 @@ router.get("/api/workouts/range", (req, res) => {
 //export
 module.exports = router;
 
-// **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
+// **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished. [MongoDB documentation on limit](https://docs.mongodb.com/manual/reference/operator/aggregation/limit/)
